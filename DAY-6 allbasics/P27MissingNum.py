@@ -1,10 +1,11 @@
-a=int(input())
-b=int(input())
-if a>b:
-    max=a
-    min=b
-else:
-    max=b
-    min=a
-fori in range(min,max+1):
-for j in        
+def missingNum(num):
+    n=set(num)
+    l=len(num)
+    m=[]
+    for i in range(1,num[-1]):
+        if i not in n:
+              m.append(i)
+    return m          
+num=[1,2,3,4,6,8]
+print(missingNum(num))              
+      
