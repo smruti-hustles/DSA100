@@ -1,8 +1,4 @@
-#prime factors of a number
-def isPrime(num):
-    
-    if c==2:
-        return 1       
+#prime factors of a number     
 n=int(input())
 for i in range(1,n):
     c=0
