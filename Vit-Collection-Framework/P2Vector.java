@@ -72,20 +72,7 @@ public class P2Vector{
         System.out.println(it.next());
        }
 
-       //we can also clone our aarraylist
-        //(shallow copy so changes made in it won't effect the original one)
-        ArrayList<Integer> cl=(ArrayList<Integer>)l.clone();
-        System.out.println(cl); //[10, 62, 30, null, 30, 100]
-        l.add(10);
-        l.add(10);
-        l.add(10);
-        System.out.println(l.indexOf(10)); //0 gives first index of 10
-        System.out.println(l.lastIndexOf(10)); //8 gives last index of 10
-        /******************very very imp**************************** */
-        //Collections.sort(l);
-        //System.out.println(l); when null ele is there we cannot sort it
-        System.out.println(l.subList(3,5)); //gives subList i.e ele in 3rd and 4th index
-        
+       
 
  l.clear();//it removes all the ele from the list
        System.out.println(l);//[]
