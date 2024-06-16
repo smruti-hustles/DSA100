@@ -30,7 +30,7 @@ public class P3Stack {
          * 5-200   therefore s.search(200)=>5
          * 6-100
          */       
-          
+         System.out.println(s.search(1)); //-1 since element 1 is not present it returns -1 
         
                 
     }
