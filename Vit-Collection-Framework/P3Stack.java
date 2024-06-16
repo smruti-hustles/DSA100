@@ -19,9 +19,18 @@ public class P3Stack {
         System.out.println(s.peek());//400
         System.out.println(s.empty());//false //it gives whether stack is empty or not
 
-        System.out.println(s.search(200));
-        System.out.println(s.seach(200));
-
+         System.out.println(s.search(200)); //5
+        System.out.println(s.search(400)); //1
+        /*
+         * Here the search() method starts searching from the top 
+         * 1-400 top of the stack therefore s.search(400)=>1
+         * 2-null
+         * 3-400
+         * 4-300
+         * 5-200   therefore s.search(200)=>5
+         * 6-100
+         */       
+          
         
                 
     }
