@@ -32,7 +32,7 @@ public class P1ArrayList{
        System.out.println(l.get(3));//i wil give the ele at index 3 == 3330
        
        //removing ele with the help of index
-       int a=l.remove(1);//it will remove the ele at index 1 ==20
+       int a=l.remove(1);//it will remove the ele at index 1 ==210
        System.out.println(l); //[20, 300, 3330, null, 30, 100, 101, 2022, 3044] the remaining ele
        System.out.println(a); //210 the removed ele
        //we can also remove the ele by their values
