@@ -4,6 +4,7 @@ import java.util.*;
 
 public class P4LinkedList {
     public static void main(String[] args) {
+        
        LinkedList<Integer> l=new LinkedList<>();
        l.add(210);
        l.add(20);
@@ -35,7 +36,7 @@ public class P4LinkedList {
        System.out.println(l.get(3));//i wil give the ele at index 3 == 3330
        
        //removing ele with the help of index
-       int a=l.remove(1);//it will remove the ele at index 1 ==20
+       int a=l.remove(1);//it will remove the ele at index 1 ==210
        System.out.println(l); //[20, 300, 3330, null, 30, 100, 101, 2022, 3044] the remaining ele
        System.out.println(a); //210 the removed ele
        //we can also remove the ele by their values
@@ -71,7 +72,7 @@ public class P4LinkedList {
         System.out.println(it.next());
        }
 
-       //we can also clone our aarraylist
+       //we can also clone our linkedlist
         //(shallow copy so changes made in it won't effect the original one)
         LinkedList<Integer> cl=(LinkedList<Integer>)l.clone();
         System.out.println(cl); //[20, 62, 3330, null, 30, 100]
@@ -90,6 +91,52 @@ public class P4LinkedList {
  l.clear();//it removes all the ele from the list
        System.out.println(l);//[]
        System.out.println(l.isEmpty()); // true
+
+
+       //Till now it is so similar to ArrayList Now let's see some different methods 
+
+    LinkedList<String> ll=new LinkedList<>();
+    ll.offer("avishka");
+    ll.offer("smruti");
+    ll.offer("pooja");
+    System.out.println(ll);   //[avishka, smruti, pooja]    
+    Collections.sort(ll);     //sorts the list
+    System.out.println(ll);   //[avishka, pooja, smruti]
+    ll.set(1,"Pranesh"); //updates the  element at index 1
+    System.out.println(ll); //[avishka, Pranesh, smruti]
+
+    ll.add("Rohit");
+    System.out.println(ll);//[avishka, Pranesh, smruti, Rohit]
+    ll.add(2,"Sai");//used for insertion 
+    System.out.println(ll);//[avishka, Pranesh, Sai, smruti, Rohit]
+   // ll.offer(2,"mehek"); we cannot insert ele at any index. It can add element only at the end of the list
+    System.out.println(ll.get(0)); //avishka
+    System.out.println(ll.get(2)); //Sai
+    System.out.println(ll.get(3)); //smruti
+
+    ll.addFirst("venky");
+    ll.addLast("Ragini");
+    System.out.println(ll); //[venky, avishka, Pranesh, Sai, smruti, Rohit, Ragini]
+
+    System.out.println(ll.getFirst()); //venky
+    System.out.println(ll.getLast());   //Ragini
+
+    System.out.println(ll.remove(3)); //ele at inde 3 i.e., Sai is removed
+    System.out.println(ll); //[venky, avishka, Pranesh, smruti, Rohit, Ragini]
+
+    System.out.println(ll.remove("Ragini"));//true that is Ragini is removed
+    System.out.println(ll); //[venky, avishka, Pranesh, smruti, Rohit]
+
+    ll.removeFirst();  //venky is removed
+    System.out.println(ll); //[avishka, Pranesh, smruti, Rohit]
+    ll.removeLast();  //Rohit is removed
+    System.out.println(ll); //[avishka, Pranesh, smruti]
+
+    System.out.println(ll.peek()); //avishka <-gives the head of the queue or first ele of the linkedlist
+    System.out.println(ll); //[avishka, Pranesh, smruti]
+    System.out.println(ll.poll()); //avishka <-it gives and removes the first element of list or head of the queue
+    System.out.println(ll); //[Pranesh, smruti]
+    
        
        
     }
